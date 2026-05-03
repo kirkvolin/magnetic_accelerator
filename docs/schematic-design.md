@@ -3,13 +3,13 @@ title: Schematic Design
 ---
 
 ## Schematic
-![Schematic](https://raw.githubusercontent.com/kirkvolin/magnetic_accelerator/main/assets/Schematic%20Assets/ESP32%20MQTT%20Schematic.png)
+![Schematic](assets/Schematic%20Assets/ESP32%20MQTT%20Schematic.png)
 
 ## PCB
 
-![Top](https://raw.githubusercontent.com/kirkvolin/magnetic_accelerator/main/assets/simulation_image_top.png)
+![Top](assets/simulation_image_top.png)
 
-![Bottom](https://raw.githubusercontent.com/kirkvolin/magnetic_accelerator/main/assets/simulation_image_bottom.png)
+![Bottom](assets/simulation_image_bottom.png)
 
 ## ZIP File
 [Click here for PDF and ZIP files](https://github.com/kirkvolin/magnetic_accelerator/tree/main/assets/Schematic%20Assets)

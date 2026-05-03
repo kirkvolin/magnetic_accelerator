@@ -72,6 +72,7 @@ extra_javascript:
     
 not_in_nav: |
   static
+  assets
   
 copyright: "Copyright &copy; 2024 team-name-here"
 
