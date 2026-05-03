@@ -3,16 +3,16 @@ title: Schematic Design
 ---
 
 ## Schematic
-![Schematic](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Schematic%20Assets/ESP32%20MQTT%20Schematic.png?raw=true)
+![Schematic](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Schematic%20Assets/ESP32%20MQTT%20Schematic.png?raw=true)
 
 ## PCB
 
-![Top](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/simulation_image_top.png?raw=true)
+![Top](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/simulation_image_top.png?raw=true)
 
-![Bottom](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/simulation_image_bottom.png?raw=true)
+![Bottom](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/simulation_image_bottom.png?raw=true)
 
 ## ZIP File
-[Click here for PDF and ZIP files](https://github.com/kirkvolin/kirkvolin.github.io/tree/main/assets/Schematic%20Assets)
+[Click here for PDF and ZIP files](https://github.com/kirkvolin/magnetic_accelerator/tree/main/assets/Schematic%20Assets)
 
 ## Writeup
 This PCB allows input power from 8 pin ribbon cables, USB, or a barrel jack. Any combination of power inputs can be connected together safely through the use of OR diodes. The voltage regulator circuit powers an ESP32-S3, which is the main component of the MQTT subsystem. The ESP32-S3 can be programmed and communicate with a PCB through the use of the ESP32-S3 USB OTG functionality. 

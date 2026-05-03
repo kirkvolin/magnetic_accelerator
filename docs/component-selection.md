@@ -14,14 +14,14 @@ My role in the team is the bidirection internet communication subsystem using MQ
 | Solution 1  | Pros                                                                                        | Cons                                      |
 |:-----------:|:-------------------------------------------------------------------------------------------:|:-----------------------------------------:|
 |LM2576HVS-3.3| 3.3V Fixed Output                                                                           |   Most Expensive                          |
-|![LM2576HVS-3.3](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2575HVS-3.3.png?raw=true)             | Large footprint makes hand soldering easier                                                 |   Unfamiliar Manufacturer                 |
+|![LM2576HVS-3.3](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2575HVS-3.3.png?raw=true)             | Large footprint makes hand soldering easier                                                 |   Unfamiliar Manufacturer                 |
 |[Digikey](https://www.digikey.com/en/products/detail/umw/LM2576HVS-3-3/16705917)             | Requires minimal external components                                                        |   Somewhat confusing component datasheet    |
 |             | High current output allows more components to operate from this regulator if needed.        |                                           |
 
 | Solution 2 | Pros                                                                                          |Cons                                      |
 |:----------:|:---------------------------------------------------------------------------------------------:|:----------------------------------------:|
 |LM2574M-3.3 | 3.3V Fixed Output | Not a lot of extra current available for expanding the system|
-|![LM2574M-3.3](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2674M-3.3.png?raw=true)| Pins have good spacing for hand soldering | Smallest component that could likely be hand soldered|
+|![LM2574M-3.3](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2674M-3.3.png?raw=true)| Pins have good spacing for hand soldering | Smallest component that could likely be hand soldered|
 |[Digikey](https://www.digikey.com/en/products/detail/texas-instruments/LM2674M-3-3-NOPB/287129)|Small footprint can be good for board design|  |
 |         | Cheapest option               | |
 |        |  Easy to follow datasheet
@@ -29,13 +29,13 @@ My role in the team is the bidirection internet communication subsystem using MQ
 |Solution 3 | Pros                                                                                          |Cons                                      |
 |:----------:|:--------------------------------------------------------------------------------------------:|:----------------------------------------:|
 |LM2676S-3.3 | Clear datasheet  | Single sided pins are close together, making hand soldering more difficult |
-|![LM2676S-3.3](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2676S-3.3.png?raw=true)| Large footprint make it easy to handle | More expensive than another option |
+|![LM2676S-3.3](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2676S-3.3.png?raw=true)| Large footprint make it easy to handle | More expensive than another option |
 |[Digikey](https://www.digikey.com/en/products/detail/texas-instruments/LM2676S-3-3-NOPB/363809) |Plenty of excess amperage available if needed| Larger footprint takes up more space on PCB|
 
 |Solution 4 | Pros                                                                                          |Cons                                      |
 |:----------:|:--------------------------------------------------------------------------------------------:|:----------------------------------------:|
 |LM2595S-3.3 | Clear datasheet  | Single sided pins are close together, potentially making hand soldering more difficult |
-|![LM2676S-3.3](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2595S-3.3.png?raw=true)| Large footprint make it easy to handle | More expensive than another option |
+|![LM2676S-3.3](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2595S-3.3.png?raw=true)| Large footprint make it easy to handle | More expensive than another option |
 |[Digikey](https://www.digikey.com/en/products/detail/texas-instruments/LM2595S-3-3-NOPB/363698) |Exceeds amperage requirement peak of 500mA for ESP32, but not as excessively as other options available| Larger footprint takes up more space on PCB|
 
 #### Selection
@@ -44,30 +44,30 @@ For a power regulator, the LM2595S seems to be the optimal solution. It offers a
 Because of it's lower minimum input voltage of 4.5V, it enables the use of USB as a source of power compared to the LM2675M and LM2676S which wouldn't be able to accomplish this due to their minimum requirements of 6.5V and 8V respectively. The regulator's size of the TO263CA standard will also be much easier to manipulate and place for surface mount hand soldering.
 
 #### Application
-![Typical Application](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2595S%20Typical%20Application.png?raw=true)
-![Buck Regulator](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2595S%20Buck%20Regulator.png?raw=true)
+![Typical Application](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2595S%20Typical%20Application.png?raw=true)
+![Buck Regulator](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2595S%20Buck%20Regulator.png?raw=true)
 #### Footprint
-![Footprint](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/LM2595S%20Package.png?raw=true)
+![Footprint](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/LM2595S%20Package.png?raw=true)
 
 ### Power Input
 
 |Solution 1 | Pros                                                                                          |Cons                                      |
 |:----------:|:--------------------------------------------------------------------------------------------:|:----------------------------------------:|
 |Barrel jack |Consistent power | Need access to power outlets| 
-|![Barrel Plug](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/Barrel%20Plug.png?raw=true)| Easy to implement | Separate cable required|
+|![Barrel Plug](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/Barrel%20Plug.png?raw=true)| Easy to implement | Separate cable required|
 |[Digikey](https://www.digikey.com/en/products/detail/tensility-international-corp/54-00165/10459297)|||
 
 |Solution 2 | Pros                                                                                          |Cons                                      |
 |:----------:|:--------------------------------------------------------------------------------------------:|:----------------------------------------:|
 |USB |Consistent power | Need access to power outlet or PC|
-|![USB B](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/Micro%20USB%20B.png?raw=true)| Relatively easy to implement | Separate cable required|
+|![USB B](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/Micro%20USB%20B.png?raw=true)| Relatively easy to implement | Separate cable required|
 |[Digikey](https://www.digikey.com/en/products/detail/amphenol-cs-fci/10118193-0001LF/2785388)|USB B/C are extremely common| Soldering can be tricky, esp. USB C |
 ||Can provide both power and data||
 
 |Solution 2 | Pros                                                                                          |Cons                                      |
 |:----------:|:--------------------------------------------------------------------------------------------:|:----------------------------------------:|
 |Onboard Battery |Portability | Need backup batteries/charger|
-|![Battery](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Component%20Selection/18650%20Battery.png?raw=true)| Relatively easy to implement | Would increase board size significantly or require separate board for power|
+|![Battery](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Component%20Selection/18650%20Battery.png?raw=true)| Relatively easy to implement | Would increase board size significantly or require separate board for power|
 |[Digikey](https://www.digikey.com/en/products/detail/sparkfun-electronics/PRT-12895/5271298)|| Much more expensive to implement |
 ||||
 
@@ -109,26 +109,26 @@ For powering this subsystem, I feel that versatility is important. Because USB i
 | USB Programmer | 1           | 1      | GPIO19 ~ GPIO20                |
 
 #### Pinout
-![Pinout](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/ESP32%20Pinout.png?raw=true)
-![Pin Table 1](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/ESP32%20Pin%20Definitions%201.png?raw=true)
-![Pin Table 2](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/ESP32%20Pin%20Definitions%202.png?raw=true)
+![Pinout](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/ESP32%20Pinout.png?raw=true)
+![Pin Table 1](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/ESP32%20Pin%20Definitions%201.png?raw=true)
+![Pin Table 2](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/ESP32%20Pin%20Definitions%202.png?raw=true)
 
 #### Footprint
-![Footprint](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/ESP32%20Pin%20Dimensions.png?raw=true)
+![Footprint](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/ESP32%20Pin%20Dimensions.png?raw=true)
 
 #### USB OTG
 
-![USB OTG](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/ESP32%20USB%20OTG.png?raw=true)
+![USB OTG](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/ESP32%20USB%20OTG.png?raw=true)
 
 #### UART
 
-![UART](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/UART%201.png?raw=true)
-![UART2](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/UART%202.png?raw=true)
+![UART](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/UART%201.png?raw=true)
+![UART2](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/UART%202.png?raw=true)
 
 #### LED PWM
 
-![LED](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/LED%201.png?raw=true)
-![LED2](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/ESP32/LED%202.png?raw=true)
+![LED](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/LED%201.png?raw=true)
+![LED2](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/ESP32/LED%202.png?raw=true)
 
 
 ### General Components
@@ -136,8 +136,8 @@ For powering this subsystem, I feel that versatility is important. Because USB i
 All surface mount components such as resistors, capacitors, etc. are planned to use 0805 standard for ease of handling and soldering.
 
 ### Power Budget
-![Power Budget 1](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Power%20Budget/Power%20Budget%201.png?raw=true)
-![Power Budget 2](https://github.com/kirkvolin/kirkvolin.github.io/blob/main/assets/Power%20Budget/Power%20Budget%202.png?raw=true)
+![Power Budget 1](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Power%20Budget/Power%20Budget%201.png?raw=true)
+![Power Budget 2](https://github.com/kirkvolin/magnetic_accelerator/blob/main/assets/Power%20Budget/Power%20Budget%202.png?raw=true)
 
 
 With this subsystem, the primary power draw is the ESP32-S3. I allowed an extra 50% current capacity minimum when selecting my voltage regulator to ensure that my subsystem was capable of powering the ESP32 and any additional components that might be added through design and integration.
