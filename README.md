@@ -1,4 +1,4 @@
-# EGR314 Individual Report — Magnetic Accelerator
+# EGR314 Individual Report - Magnetic Accelerator
 
 Kirk Volin · ASU Polytechnic · Robotics Engineering · Spring 2025
 
@@ -24,8 +24,8 @@ This site documents my individual subsystem contribution to the EGR314 team proj
 
 ## Built With
 
-- [Altium Designer](https://www.altium.com/) — schematic and PCB design
-- [ESP-IDF](https://github.com/espressif/esp-idf) — ESP32 firmware framework
+- [Altium Designer](https://www.altium.com/) - schematic and PCB design
+- [ESP-IDF](https://github.com/espressif/esp-idf) - ESP32 firmware framework
 - Fusion 360
 - 3D Printing
 ## Team
